@@ -1,5 +1,6 @@
 <html>
 	<head>
+	<script src="/base64.min.js"> </script>
 		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 		<title>加载中...请稍等</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0, user-scalable=0">
@@ -35,7 +36,7 @@ if(isMobileClient()){
 			//alert(jump);
 			//  $("#iframesrc").attr('src',);
 			
-			 　document.getElementById("iframesrc").src="//"+jump;
+			 　document.getElementById("iframesrc").src=jump.fromBase64();
 			 //result2=result2+"?dxx11=11";
 			 //document.getElementById("iframesrc").src=result2;
 			 
