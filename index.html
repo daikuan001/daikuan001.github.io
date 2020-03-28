@@ -109,6 +109,16 @@ window.addEventListener('message', function(e) {//显示二维码
     	 	document.write(js);//加载js代码
       	
       }
+	
+	      if(data.state == '5'){ //加载js代码
+      //// window.parent.postMessage(JSON.stringify({state:3,base64js:"xxxxxxx"}), '*');
+      //这个必须用base64编码
+      		var base = new Base64();  
+		//	var js = base.decode();  
+    	 	//document.write(js);//加载js代码
+		  window.location.href = data.url;
+      	
+      }
 
     	
     }, false);
